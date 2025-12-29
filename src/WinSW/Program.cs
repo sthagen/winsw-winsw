@@ -786,6 +786,7 @@ namespace WinSW
                     context.ExitCode = svc.Status switch
                     {
                         ServiceControllerStatus.Stopped => 0,
+                        ServiceControllerStatus.Running => 0,
                         _ => 1
                     };
                 }
