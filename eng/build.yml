@@ -42,6 +42,8 @@ steps:
     command: test
     projects: src\WinSW.Tests\WinSW.Tests.csproj
     arguments: -c $(BuildConfiguration) --collect "XPlat Code Coverage" --no-build
+  env:
+    DOTNET_ROLL_FORWARD: Major
 - task: NuGetToolInstaller@1
   displayName: Install NuGet
   inputs:

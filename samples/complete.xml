@@ -130,6 +130,15 @@ SECTION: Executable management
 -->
 
   <!--
+    OPTION: hidewindow
+    When true, starts the executable with CreateNoWindow=true (no console window).
+    Default value: false
+  -->
+  <!--
+  <hidewindow>true</hidewindow>
+  -->
+
+  <!--
     OPTION: priority
     Desired process priority.
     Possible values: Normal, Idle, High, RealTime, BelowNormal, AboveNormal

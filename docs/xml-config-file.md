@@ -219,6 +219,17 @@ This optional element can be specified multiple times if necessary to specify en
 <env name="HOME" value="c:\abc" />
 ```
 
+### hidewindow
+
+**Optional**
+When set to `true`, WinSW starts the service process with `CreateNoWindow=true`, which prevents a console window from being created.
+This is mainly useful for console applications and for avoiding a briefly visible window during startup.
+The default value is `false`.
+
+```xml
+<hidewindow>true</hidewindow>
+```
+
 ### interactive
 
 If this optional element is specified, the service will be allowed to interact with the desktop, such as by showing a new window and dialog boxes.

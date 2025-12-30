@@ -19,8 +19,8 @@ namespace WinSW.Tests
             {
                 _ = Helper.Test(new[] { "install", config.FullPath }, config);
 
-                using var controller = new ServiceController(Helper.Name);
-                Assert.Equal(Helper.DisplayName, controller.DisplayName);
+                using var controller = new ServiceController(config.Name);
+                Assert.Equal(config.DisplayName, controller.DisplayName);
                 Assert.False(controller.CanStop);
                 Assert.False(controller.CanShutdown);
                 Assert.False(controller.CanPauseAndContinue);
@@ -44,7 +44,7 @@ namespace WinSW.Tests
 
                         if (Environment.GetEnvironmentVariable("System.DefinitionId") != null)
                         {
-                            session = new InterProcessCodeCoverageSession(Helper.Name);
+                            session = new InterProcessCodeCoverageSession(config.Name);
                         }
                     }
                     finally
