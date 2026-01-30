@@ -10,7 +10,11 @@
 
 WinSW wraps and manages any application as a Windows service.
 
-**We are actively developing WinSW 3. Please refer to the [v2](https://github.com/winsw/winsw/tree/master) branch for previous version documentation.**
+## Project status
+
+- Development of WinSW 3.x happens on the default branch [`v3`](https://github.com/winsw/winsw/tree/v3).
+- GitHub Releases contains stable 2.x releases and 3.x pre-releases. NuGet and Maven packages currently correspond to 2.x.
+- For WinSW 2.x documentation, refer to the [`v2`](https://github.com/winsw/winsw/tree/v2) branch.
 
 ## Why?
 
@@ -117,6 +121,7 @@ Most commands require Administrator privileges to execute. WinSW will prompt for
 * Use cases:
   * [Self-restarting services](docs/self-restarting-service.md)
   * [Deferred file operations](docs/deferred-file-operations.md)
+  * [Troubleshooting](docs/troubleshooting.md)
 
 ## Contributing
 
@@ -126,3 +131,12 @@ See the [contributing guidelines](CONTRIBUTING.md) for more information.
 ## License
 
 WinSW is licensed under the [MIT](LICENSE.txt) license.
+
+## Similar projects
+
+* [srvany.exe](https://learn.microsoft.com/en-us/troubleshoot/windows-client/setup-upgrade-and-drivers/create-user-defined-service)
+* [nssm](https://git.nssm.cc/nssm/nssm.git)
+* [srvany-ng](https://github.com/birkett/srvany-ng)
+* [shawl](https://github.com/mtkennerly/shawl)
+
+
